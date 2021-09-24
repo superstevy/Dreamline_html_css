@@ -9,9 +9,9 @@ body {
   color: #264f58;
 }
 
-img {
+/* img {
   object-fit: cover;
-}
+} */
 
 a {
   text-decoration: none;
@@ -59,6 +59,10 @@ header
 .flex-header .mb-1 div {
   display: inline-block;
   margin: auto 25px;
+}
+
+.flex-header .mb-1 .next {
+  display: none;
 }
 
 /*/ //////////////////////////////////////////////////////////////////////////////////////////////
@@ -346,11 +350,6 @@ footer
   margin: auto 48% 50px;
 }
 
-/* .btn-2 .back {
-  color: #264f58;
-  font-size: 30px;
-} */
-
 /***************************************** Logo.html *******************************************
 /
 /
@@ -495,15 +494,253 @@ main
   color: #9dd9d7;
 }
 
-
-
 /*/ //////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 footer
 ////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
 .btn-back {
   margin: 20px 48% 50px;
+}
+
+/***************************************** Mobile *******************************************
+/*****************************************
+/*****************************************
+/*****************************************
+/*****************************************
+/*****************************************
+/*****************************************
+******************************************/
+
+@media screen and (max-width: 500px) {
+  #home .flex-header .mb-1 .signup,
+  #generate .flex-header .mb-1 .next,
+  #logo .flex-header .mb-1 .next,
+  #info .flex-header .mb-1 .next {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  .back {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  /***************************************** Index.html *******************************************
+  /
+  */
+
+  .main {
+    background-size: 100%;
+    background-position: 2em 100%;
+  }
+
+  .flex-header .mb-0 {
+    margin: auto 15px;
+    font-size: 20px;
+    font-weight: normal;
+    mix-blend-mode: normal;
+  }
+
+  .flex-header .mb-0 p > span {
+    font-weight: bold;
+  }
+
+  .flex-header .mb-1 div {
+    display: none;
+  }
+
+  .flex-main .main-1 {
+    width: 0;
+    margin: 0;
+  }
+
+  .main-1 .title {
+    width: 11em;
+    margin: 20px;
+    font-size: 30px;
+  }
+
+  .main-1 .description {
+    font-size: 18px;
+    width: 19em;
+    margin: 15px;
+  }
+
+  .main-1 .generate {
+    width: 15em;
+    margin: 12em 20px;
+    position: relative;
+    bottom: 10em;
+  }
+
+  .generate .make-image {
+    font-size: 15px;
+    border-radius: 30px;
+  }
+
+  .flex-main .main-2 {
+    display: none;
+  }
+
+  .footer {
+    background-image: url("Assets/mobile-bgd-1.png");
+    background-position: 50% 50%;
+    padding: 1px;
+  }
+
+  .footer-1 {
+    margin: 30px 15px;
+  }
+
+  .footer-1 .title {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .footer-1 .title p {
+    width: 100%;
+  }
+
+  .footer-2 .logo-1 {
+    width: 70%;
+  }
+
+  .image-header {
+    background-color: #264f581c;
+    background-image: none;
+    height: 50%;
+  }
+
+  .image-header .logo {
+    margin: 0 5px;
+    width: 50%;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .image-header .business {
+    margin: 0 5px;
+  }
+
+  .image-header .business hr {
+    width: 3em;
+    border: 1px solid #ffffff;
+    margin: 0 0 5px;
+  }
+
+  p.name {
+    font-size: 6px;
+    margin: auto;
+  }
+
+  p.occupation,
+  p.brand {
+    font-size: 5px;
+  }
+
+  .footer-2 .logo-2 {
+    width: 35%;
+    left: 44%;
+    top: 2em;
+    z-index: 2;
+  }
+
+  .footer-2 .logo-3 {
+    width: 50%;
+    bottom: 7em;
+    left: 1em;
+  }
+
+  .try-now {
+    bottom: 3em;
+    margin: 40px 30%;
+  }
+
+  .try-now .make-image {
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 25px;
+  }
+
+  .footer-3 {
+    font-size: 15px;
+    margin: auto 15px;
+  }
+
+  .footer-3 p {
+    margin: 0 0 15px;
+  }
+
+  /***************************************** Generate.html *******************************************
+  /
+  */
+
+  #generate {
+    background-image: url("Assets/mobile-bgd-2.png");
+  }
+
+  .flex-1 {
+    margin: auto 20px;
+  }
+
+  .flex {
+    margin: 15px 0 0;
+  }
+
+  .step p {
+    font-size: 9px;
+  }
+
+  .flex-1 img {
+    width: 2em;
+  }
+
+  .step-1 > .icon {
+    border-radius: 5px;
+  }
+
+  .choose {
+    font-size: 25px;
+    margin: 40px 0;
+  }
+
+  .choose p {
+    width: 70%;
+    margin: auto;
+  }
+
+  .flex-2 {
+    display: grid;
+    grid-template-areas: "bgd bgd";
+    grid-row-gap: 10px;
+  }
+
+  .bgd {
+    margin: 0 10px;
+  }
+
+  .bgd img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #000000a6;
+  }
+
+  .btn-1 {
+    margin: 50px 40% 30px;
+  }
+
+  .btn-1 .next {
+    background-color: #264f58;
+    padding: 10px 20px;
+    font-size: 18px;
+    box-shadow: 0px 0px 5px 0px #000000a6;
+  }
+
+  .btn-2 {
+    margin: auto 40% 50px;
+  }
 }
