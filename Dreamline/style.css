@@ -523,8 +523,9 @@ footer
   }
 
   .back {
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 15px;
+    font-weight: 600;
   }
 
   /***************************************** Index.html *******************************************
@@ -742,5 +743,59 @@ footer
 
   .btn-2 {
     margin: auto 40% 50px;
+  }
+
+  /***************************************** Logo.html *******************************************
+  /
+  */
+
+  #logo {
+    background-image: url("Assets/mobile-bgd-3.png");
+    background-position: 50% 20%;
+  }
+
+  .addLogo {
+    width: 50%;
+    border-radius: 5px;
+  }
+
+  .btn {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .btn .btn-1,
+  .btn .btn-2 {
+    margin: 0 auto 25px;
+  }
+
+  /***************************************** Info.html *******************************************
+  /
+  */
+
+  #info {
+    background-image: url("Assets/mobile-bgd-3.png");
+    background-position: 53% 0%;
+  }
+
+  .infos {
+    margin: 0 auto;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  .infos input {
+    font-size: 20px;
+  }
+
+  .btn-add .next {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .btn-back {
+    margin: 20px 39% 50px;
   }
 }
