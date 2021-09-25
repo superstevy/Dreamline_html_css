@@ -9,8 +9,9 @@ body {
   color: #264f58;
 }
 
-/* img {
-  object-fit: cover;
+/*  img {
+  max-width: 100%;
+  height: auto;
 } */
 
 a {
@@ -232,7 +233,7 @@ p.brand {
   background-color: #264f58;
   border: none;
   color: #9dd9d7;
-  padding: 25px 150px;
+  padding: 25px 90px;
   border-radius: 10px;
   font-size: 40px;
   font-weight: bold;
@@ -318,6 +319,10 @@ main
 
 .bgd {
   margin: 15px;
+}
+
+.bgd img:hover {
+  outline: 15px solid #8dc7c5;
 }
 
 .selected {
